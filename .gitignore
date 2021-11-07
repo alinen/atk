@@ -1,3 +1,9 @@
+.DS_Dtore
+*~
+*.swp
+*.swo
+build
+
 # Prerequisites
 *.d
 
