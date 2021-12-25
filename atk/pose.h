@@ -9,9 +9,6 @@ namespace atk {
 class Pose {
 public:
   Pose();
-  Pose(const glm::vec3& p);
-  Pose(const glm::quat& q);
-  Pose(const glm::vec3& pos, const glm::quat& rot);
   Pose(const Pose& p);
   Pose& operator = (const Pose& p);
   virtual ~Pose();
