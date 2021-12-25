@@ -34,7 +34,7 @@ Pose& Pose::operator = (const Pose& p)
 std::ostream& operator<<(std::ostream& s, const Pose& v)
 {
   s << "pose(" << std::endl;
-  s << v.rootPos << std::endl; 
+  s << glm::to_string(v.rootPos) << std::endl; 
   for (unsigned int i = 0; i < v.jointRots.size(); i++)
   {
     s << glm::to_string(v.jointRots[i]) << std::endl;
