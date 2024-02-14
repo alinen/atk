@@ -66,3 +66,6 @@ endif()
 include_directories(${INCLUDE_DIRS})
 link_directories(${LIBRARY_DIRS})
 add_subdirectory(atk)
+
+add_executable(example example.cpp)
+target_link_libraries(example  atk ${LIBS})
